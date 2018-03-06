@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ae52d4</color>
+    <color name="colorPrimaryDark">#4a0072</color>
+    <color name="colorAccent">#7b1fa2</color>
+    <color name="ButtonHighlight">#d05ce3</color>
+    <color name="ButtonNormal">#d05ce3</color>
+
+    <drawable name="focused">#6a0080</drawable>
+    <drawable name="selected">#ff00ff</drawable>
+</resources>

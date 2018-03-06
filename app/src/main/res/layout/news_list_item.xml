@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:background="#ffc4ff"
+    >
+<RelativeLayout
+
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+
+    >
+
+   <TextView
+       android:id="@+id/Type_show"
+       android:layout_width="wrap_content"
+       android:layout_height="25dp"
+       tools:text="Article_Type_show"
+       android:textStyle="bold"
+       android:textAppearance="?android:textAppearanceMedium"
+       android:textColor="#212121"
+       />
+
+    <ImageView
+        android:id="@+id/Image_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/Type_show"
+        android:src="@drawable/image"
+        android:scaleType="fitCenter"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/Image_show"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/Section"
+        android:text="SECTION:-"
+        android:textColor="#212121"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/Image_show"
+        android:id="@+id/Section_Show"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_toRightOf="@id/Section"
+        tools:text="SECTION_SHOW"/>
+
+    <TextView
+        android:id="@+id/Paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Section_Show"
+        android:textSize="15dp"
+        tools:text="Paragraph"
+        android:maxLines="4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/Paragraph"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/Date"
+        android:text="Time:-"
+        android:textColor="#212121"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/Paragraph"
+        android:id="@+id/Date_Show"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_toRightOf="@id/Date"
+        tools:text="Time_Show"/>
+
+
+</RelativeLayout>
+</FrameLayout>

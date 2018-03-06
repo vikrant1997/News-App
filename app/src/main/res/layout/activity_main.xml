@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <EditText
+        android:background="#fff"
+        android:id="@+id/Search_show"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter the name of News"
+        android:layout_marginRight="10dp"
+
+        >
+    </EditText>
+    <Button
+        android:theme="@style/MyButton"
+        android:id="@+id/Search_Button"
+        android:layout_alignBottom="@id/Search_show"
+        android:layout_alignRight="@id/Search_show"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="SEARCH"
+        android:textColor="#fff"
+
+
+        />
+
+    <ListView
+        android:background="#fff"
+        android:drawSelectorOnTop="true"
+
+        android:layout_below="@id/Search_show"
+        android:id="@+id/list"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
